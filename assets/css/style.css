@@ -144,7 +144,7 @@ Hero Section
 .hero-sec {
     min-height: 100vh;
     padding: 180px 0 222px;
-    background: url("/assets/img/banner-img.png");
+    background: url("assets/img/banner-img.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
