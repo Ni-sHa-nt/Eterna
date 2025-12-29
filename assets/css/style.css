@@ -214,7 +214,7 @@ Usp-bar Section
     width: 20px;
     height: 20px;
     position: absolute;
-    background: url("/assets/img/icon-stars.svg");
+    background: url(../img/icon-stars.svg);
     top: 50%;
     transform: translatey(-50%);
     left: 0;
