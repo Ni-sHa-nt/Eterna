@@ -18,12 +18,12 @@
     --inter: "Inter", sans-serif;
 }
 
-body {
+html {
     overflow-x: hidden;
 }
 
 .my-container {
-    max-width: 1784px;
+    max-width: 1784px !important;
 }
 
 ul {
@@ -107,32 +107,107 @@ Header Section
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 
 .search-bar {
-    width: 20%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: start;
+    gap: 15px;
 }
 
 .nav-logo {
-    width: 60%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .user-sec {
-    width: 20%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: end;
+    gap: 30px;
 }
 
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    flex: 1;
+    color: var(--gray-color);
+    font-family: var(--body);
+    background: transparent;
+}
 
+.navbar-collapsed {
+    border-top: 1px solid #49494934;
+    padding-top: 15px;
+}
 
+.navbar-collapsed ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.nav-last-child {
+    margin: 0;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--gray-color);
+    font-family: var(--body);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--gray-color);
+}
+
+.nav-link::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: var(--gray-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.2s linear;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav {
+    padding: 15px 0;
+}
+
+.sm-search-bar {
+    display: none;
+}
+
+.header-sec {
+    background: var(--light-color);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 
 
 
@@ -184,68 +259,56 @@ Hero Section
 Usp-bar Section 
 ######################################
 */
-
-.usp-sec {
-    background: var(--secondary-color);
+.ups-sec {
     padding: 20px 0;
+    background: #C3A38E;
 }
 
-.usp-content h5 {
+.ups-sec .companySwiper {
+    width: 100%;
+    /* padding: 20px 0; */
+    /* background: #C3A38E; */
+}
+
+.ups-sec .companySwiper .swiper-slide {
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+
+.ups-sec .companySwiper h3 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
+    padding-left: 80px;
+    white-space: nowrap;
     color: var(--light-color);
     text-transform: capitalize;
-    position: relative;
-    margin-right: 60px;
-    padding-left: 80px;
-    margin-bottom: 0;
-    white-space: nowrap;
     font-family: var(--body);
 }
 
-.usp-wrapper,
-.usp-content {
-    display: flex;
-    align-items: center;
+/* .companySwiper img {
+    height: 60px;
+    width: auto;
+} */
+
+.ups-sec .companySwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
-.usp-content h5::after {
+.ups-sec .swiper-slide h3::after {
     content: "";
+    background: url("/assets/img/icon-stars.svg");
     width: 20px;
     height: 20px;
     position: absolute;
-    background: url(../img/icon-stars.svg);
-    top: 50%;
-    transform: translatey(-50%);
     left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
-.usp-wrapper {
-    overflow-x: auto;
-}
-
-.usp-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.usp-content {
-    animation: move;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
 
 
-@keyframes move {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
 
 
 /* 
@@ -878,40 +941,4 @@ Shop The Look Section
 .shop-card-stars p {
     margin-left: 10px;
     color: var(--primary-color);
-}
-
-.shop-look-main-wrapper {
-    position: relative;
-}
-
-.myslider .owl-nav {
-    background: var(--primary-color);
-    display: inline-flex;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    padding: 12px 30px;
-    justify-content: center;
-    gap: 100px;
-}
-
-.myslider .owl-nav .owl-prev,
-.myslider .owl-nav .owl-next {
-    color: var(--light-color) !important;
-    font-size: 52px !important;
-    line-height: 1 !important;
-    margin-top: -14px;
-}
-
-.shop_look {
-    position: relative;
-}
-
-.slide-counter {
-    position: absolute;
-    bottom: 46px;
-    z-index: 5;
-    color: var(--light-color);
-    right: 116px;
-    font-size: 22px;
 }

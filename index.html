@@ -12,24 +12,29 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media Query  -->
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body>
     <!-- Header Section -->
+    <div class="top-bar">
+        end of season sale on now untill dec 31st! shop sale
+    </div>
     <header class="header-sec">
-        <div class="top-bar">
-            end of season sale on now untill dec 31st! shop sale
-        </div>
         <div class="container my-container">
             <nav>
                 <div class="middle-bar">
                     <div class="search-bar">
                         <img src="./assets/img/search-icon.png" alt="">
-                        <input type="search">
+                        <input type="search" id="search" placeholder="What are you looking for?">
+                        <div class="nav-menu">
+                            <span class="nav-btn"></span>
+                        </div>
                     </div>
                     <div class="nav-logo">
                         <a href="index.html">
@@ -41,6 +46,47 @@
                         <img src="./assets/img/profile-icon.png" alt="">
                         <img src="./assets/img/cart-icon.png" alt="">
                     </div>
+                </div>
+                <div class="navbar-collapsed">
+                    <div class="sm-search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="search" placeholder="What are you looking for?">
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">new arrival!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">bestseller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">necklaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">earings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">bracelets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">anklets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">gifting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">9KT fine gold</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">sale!</a>
+                        </li>
+                        <li class="nav-item nav-last-child">
+                            <a href="" class="nav-link">about us!</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -55,31 +101,46 @@
                     <p>From freshwater pearls to sleek necklaces, our pieces are designed to complement your
                         individuality with elegance and
                         grace.</p>
-                    <a href="" class="primary-btn">shop now</a>
-                    <a href="" class="primary-btn">shop bestsellers</a>
+                    <div class="hero-btn">
+                        <a href="" class="primary-btn">shop now</a>
+                        <a href="" class="primary-btn mt-xs-3">shop bestsellers</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--Usp-bar Section  -->
-        <section class="usp-sec">
-            <div class="usp-wrapper">
-                <div class="usp-content">
-                    <h5>timeless designs</h5>
-                    <h5>crafted to last</h5>
-                    <h5>ethically made</h5>
+        <section class="ups-sec">
+            <div class="ups-main swiper companySwiper">
+                <div class="ups-wrapper swiper-wrapper">
+                    <div class="ups-content swiper-slide">
+                        <h3>Timeless Designs</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Crafted To Last</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Ethically Made</h3>
+                    </div>
+                    <div class="ups-content swiper-slide">
+                        <h3>Timeless Designs</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Crafted To Last</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Ethically Made</h3>
+                    </div>
+                    <div class="ups-content swiper-slide">
+                        <h3>Timeless Designs</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Crafted To Last</h3>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3>Ethically Made</h3>
+                    </div>
                 </div>
-                <div class="usp-content">
-                    <h5>timeless designs</h5>
-                    <h5>crafted to last</h5>
-                    <h5>ethically made</h5>
-                </div>
-                <div class="usp-content">
-                    <h5>timeless designs</h5>
-                    <h5>crafted to last</h5>
-                    <h5>ethically made</h5>
-                </div>
-            </div>
         </section>
 
         <!-- Product Category section -->
@@ -577,27 +638,18 @@
             </div>
         </section>
 
-        <!-- Shop The Look Section -->
+        <!-- shop the look -->
         <section class="shop-look-sec">
             <div class="container my-container">
                 <div class="heading">
                     <h2 class="title_2">for every you</h2>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-6 shop_look">
-                        <div class="shop-look-main-wrapper myslider owl-carousel">
+                    <div class="col-6">
+                        <div class="shop-look-main-wrapper">
                             <div class="shop-look-main">
                                 <img src="./assets/img/shop-look-img-01.png" alt="">
                             </div>
-                            <div class="shop-look-main">
-                                <img src="./assets/img/shop-look-img-02.png" alt="">
-                            </div>
-                            <div class="shop-look-main">
-                                <img src="./assets/img/shop-look-img-03.png" alt="">
-                            </div>
-                        </div>
-                        <div class="slide-counter">
-                            <span id="current">1</span> / <span id="total">2</span>
                         </div>
                     </div>
                     <div class="col-3">
@@ -655,9 +707,8 @@
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Owl Carousel Jquery -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
