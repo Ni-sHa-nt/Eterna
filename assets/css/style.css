@@ -297,7 +297,7 @@ Usp-bar Section
 
 .ups-sec .swiper-slide h3::after {
     content: "";
-    background: url("/assets/img/icon-stars.svg");
+    background: url("../img/icon-stars.svg");
     width: 20px;
     height: 20px;
     position: absolute;
