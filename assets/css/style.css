@@ -261,7 +261,7 @@ Usp-bar Section
 */
 .ups-sec {
     padding: 20px 0;
-    background: #C3A38E;
+    background: var(--secondary-color);
 }
 
 .ups-sec .companySwiper {
@@ -298,6 +298,9 @@ Usp-bar Section
 .ups-sec .swiper-slide h3::after {
     content: "";
     background: url("../img/icon-stars.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -380,13 +383,17 @@ Product Category section
     width: 100%;
 }
 
-.category-row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+.product-sec .categorySwiper {
+    width: 100%;
+    overflow: hidden;
 }
 
-.category-row::-webkit-scrollbar {
-    display: none;
+.product-sec .categorySwiper .swiper-slide {
+    width: auto;
+}
+
+.product-sec .categorySwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
 

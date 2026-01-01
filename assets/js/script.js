@@ -14,7 +14,7 @@ menu.addEventListener('click', function () {
 });
 
 
-// Usp-bar Section 
+// Usp-bar Section
 const swiper = new Swiper(".companySwiper", {
     slidesPerView: "auto",
     spaceBetween: 60,
@@ -29,6 +29,50 @@ const swiper = new Swiper(".companySwiper", {
     },
 
     freeMode: false,
+});
+
+
+// Product Category section 
+const categorySwiper = new Swiper(".categorySwiper", {
+    slidesPerView: "6",
+    spaceBetween: 30,
+
+    loop: false,
+    // loopedSlides: 9,          // number of slides
+    // loopAdditionalSlides: 9,
+
+    // speed: 6000,
+    allowTouchMove: true,
+
+    freeMode: true,
+
+    autoplay: {
+        // delay: 1,
+        // disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        0: {            // screens >= 0px
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        480: {          // screens >= 480px
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {          // screens >= 768px
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {         // screens >= 1024px
+            slidesPerView: 5,
+            spaceBetween: 30,
+        },
+        1440: {         // screens >= 1440px (very large screens)
+            slidesPerView: 6,
+            spaceBetween: 30,
+        }
+    }
 });
 
 
