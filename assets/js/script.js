@@ -37,14 +37,14 @@ const categorySwiper = new Swiper(".categorySwiper", {
     slidesPerView: "6",
     spaceBetween: 30,
 
-    loop: false,
+    loop: true,
     // loopedSlides: 9,          // number of slides
     // loopAdditionalSlides: 9,
 
     // speed: 6000,
     allowTouchMove: true,
 
-    freeMode: true,
+    freeMode: false,
 
     autoplay: {
         // delay: 1,
@@ -74,6 +74,45 @@ const categorySwiper = new Swiper(".categorySwiper", {
         }
     }
 });
+
+
+// Top Style Section
+const topStyleSwiper = new Swiper(".topStyleSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+
+    allowTouchMove: true,
+
+    freeMode: false,
+
+    autoplay: {
+        // delay: 1,
+        // disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        }
+    }
+});
+
 
 
 

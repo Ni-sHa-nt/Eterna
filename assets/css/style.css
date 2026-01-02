@@ -259,24 +259,24 @@ Hero Section
 Usp-bar Section 
 ######################################
 */
-.ups-sec {
+.usp-sec {
     padding: 20px 0;
     background: var(--secondary-color);
 }
 
-.ups-sec .companySwiper {
+.usp-sec .companySwiper {
     width: 100%;
     /* padding: 20px 0; */
     /* background: #C3A38E; */
 }
 
-.ups-sec .companySwiper .swiper-slide {
+.usp-sec .companySwiper .swiper-slide {
     width: auto;
     text-align: center;
     position: relative;
 }
 
-.ups-sec .companySwiper h3 {
+.usp-sec .companySwiper h3 {
     font-size: 20px;
     font-weight: 400;
     padding-left: 80px;
@@ -291,11 +291,11 @@ Usp-bar Section
     width: auto;
 } */
 
-.ups-sec .companySwiper .swiper-wrapper {
+.usp-sec .companySwiper .swiper-wrapper {
     transition-timing-function: linear !important;
 }
 
-.ups-sec .swiper-slide h3::after {
+.usp-sec .swiper-slide h3::after {
     content: "";
     background: url("../img/icon-stars.svg");
     background-position: center;
@@ -410,12 +410,19 @@ Top Style Section
 
 .top-style-img {
     max-width: 422px;
+    position: relative;
+    overflow: hidden;
 }
 
 .top-style-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.top-style-card:hover .top-style-img img {
+    transform: scale(1.4);
 }
 
 .top-style-content {
@@ -440,6 +447,7 @@ Top Style Section
 
 .top-style-card {
     position: relative;
+    overflow: hidden;
 }
 
 .badge {
@@ -449,12 +457,85 @@ Top Style Section
     text-transform: capitalize;
     font-family: var(--body);
     position: absolute;
-    top: 10px;
+    top: -35px;
     left: 10px;
     padding: 8px 10px;
     color: var(--light-color);
     background: var(--primary-color);
+    transition: 0.4s ease;
 }
+
+.top-style-card:hover .badge {
+    top: 10px;
+}
+
+.top-style-card-overlay {
+    background: linear-gradient(4deg, rgba(56, 52, 52, 1) 0%, rgba(0, 0, 0, 0.12) 50%);
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.4s linear;
+}
+
+.top-style-card:hover .top-style-card-overlay {
+    opacity: 1;
+}
+
+.top-style-card-overlay .wishlist,
+.top-style-card-overlay .cart {
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-style-card-overlay i {
+    color: var(--gray-color);
+}
+
+
+.top-style-sec .custom-prev::after,
+.top-style-sec .custom-next::after {
+    content: none;
+    /* removes default Swiper arrow */
+}
+
+.top-style-sec .custom-prev,
+.top-style-sec .custom-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.top-style-sec .custom-prev {
+    left: -25px;
+}
+
+.top-style-sec .custom-next {
+    right: -25px;
+}
+
+
+
 
 
 /* 

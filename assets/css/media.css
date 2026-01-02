@@ -3,6 +3,18 @@
  media Query 
 **********************************************************************************
 */
+@media screen and (max-width: 1800px) {
+
+    /* Top Style Section */
+    .top-style-sec .custom-prev {
+        left: -12px;
+    }
+
+    .top-style-sec .custom-next {
+        right: -12px;
+    }
+}
+
 @media screen and (max-width: 1600px) {
 
     /* Header Section */
@@ -196,6 +208,11 @@
         font-size: 40px;
     }
 
+    /* Top Style Section */
+    .top-style-sec .title_2 {
+        font-size: 40px;
+    }
+
 }
 
 
@@ -209,15 +226,15 @@
     }
 
     /* Usp-bar Section */
-    .ups-sec {
+    .usp-sec {
         padding: 12px 0;
     }
 
-    .ups-sec .companySwiper h3 {
+    .usp-sec .companySwiper h3 {
         font-size: 14px;
     }
 
-    .ups-sec .swiper-slide h3::after {
+    .usp-sec .swiper-slide h3::after {
         width: 15px;
         height: 15px;
         background-position: center;
@@ -260,7 +277,16 @@
 
     /* Product Category section */
     .product-sec .title_2 {
-        font-size: 27px;
+        font-size: 30px;
+    }
+
+    /* Top Style Section */
+    .top-style-sec .title_2 {
+        font-size: 30px;
+    }
+
+    .top-style-img {
+        max-width: 100%;
     }
 }
 
@@ -273,6 +299,10 @@
     }
 
     .category-card {
+        text-align: center;
+    }
+
+    .top-style-sec .title_2 {
         text-align: center;
     }
 }
@@ -290,6 +320,10 @@
 
     /* Product Category section */
     .product-sec .title_2 {
-        font-size: 25px;
+        font-size: 27px;
+    }
+
+    .top-style-sec .title_2 {
+        font-size: 30px;
     }
 }
