@@ -213,6 +213,11 @@
         font-size: 40px;
     }
 
+    /* Gift Section */
+    .gift-sec .heading .title_2 {
+        font-size: 40px;
+    }
+
 }
 
 
@@ -241,6 +246,16 @@
         background-size: contain;
         background-repeat: no-repeat;
 
+    }
+
+    /* Gift Section */
+    .gift-content .title_2 {
+        font-size: 28px;
+    }
+
+    .gift-content .primary-btn {
+        font-size: 10px;
+        padding: 10px 20px;
     }
 }
 
@@ -288,6 +303,11 @@
     .top-style-img {
         max-width: 100%;
     }
+
+    /* Gift Section */
+    .gift-sec .heading .title_2 {
+        font-size: 30px;
+    }
 }
 
 
@@ -325,5 +345,11 @@
 
     .top-style-sec .title_2 {
         font-size: 30px;
+    }
+
+    /* Gift Section */
+    .gift-sec .heading .title_2 {
+        text-align: center;
+        font-size: 25px;
     }
 }
