@@ -116,6 +116,35 @@ const topStyleSwiper = new Swiper(".topStyleSwiper", {
 
 
 
+// Set your sale end date (YYYY, MM-1, DD, HH, MM)
+const endDate = new Date(2026, 0, 10, 23, 59).getTime();
+
+function updateCounter() {
+    const now = new Date().getTime();
+    const gap = endDate - now;
+
+    if (gap <= 0) {
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        return;
+    }
+
+    const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((gap / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((gap / (1000 * 60)) % 60);
+
+    document.getElementById("days").innerText = String(days).padStart(2, "0");
+    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+}
+
+updateCounter();
+setInterval(updateCounter, 60000); // update every minute
+
+
+
+
 
 
 // Shop The Look Section
