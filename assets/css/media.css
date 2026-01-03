@@ -29,6 +29,16 @@
     .navbar-collapsed .nav-link {
         font-size: 12px;
     }
+
+    /* Luxury Section */
+    .luxury-content .title_2 {
+        max-width: 681px;
+        font-size: 55px;
+        font-weight: 300;
+        margin: 4px 0 30px;
+        font-family: var(--heading);
+        color: var(--light-color);
+    }
 }
 
 
@@ -173,6 +183,11 @@
     .product-sec .category-card .title_3 {
         font-size: 22px;
     }
+
+    /* Luxury Section */
+    .luxury-content {
+        padding: 100px 0 80px 50px;
+    }
 }
 
 
@@ -213,8 +228,27 @@
         font-size: 40px;
     }
 
+    .top-style-sec .custom-prev,
+    .top-style-sec .custom-next {
+        width: 40px;
+        height: 45px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .top-style-sec .custom-prev img,
+    .top-style-sec .custom-next img {
+        width: 20px;
+    }
+
     /* Gift Section */
     .gift-sec .heading .title_2 {
+        font-size: 40px;
+    }
+
+    /* Luxury Section */
+    .luxury-content .title_2 {
         font-size: 40px;
     }
 
@@ -308,6 +342,22 @@
     .gift-sec .heading .title_2 {
         font-size: 30px;
     }
+
+    /* Luxury Section */
+    .luxury-content .title_2 {
+        max-width: 100%;
+        font-size: 30px;
+    }
+
+    .luxury-content p {
+        max-width: 80%;
+        font-size: 15px;
+    }
+
+    .luxury-content {
+        padding: 50px 0 80px 50px;
+    }
+
 }
 
 
@@ -324,6 +374,26 @@
 
     .top-style-sec .title_2 {
         text-align: center;
+    }
+
+    /* Luxury Section */
+    .luxury-content .title_2 {
+        max-width: 100%;
+        font-size: 25px;
+    }
+
+    .luxury-content p {
+        max-width: 90%;
+        font-size: 12px;
+    }
+
+    .luxury-content {
+        padding: 50px 0 50px 20px;
+    }
+
+    .luxury-content .primary-btn {
+        padding: 12px 24px;
+        font-size: 12px;
     }
 }
 

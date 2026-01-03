@@ -610,10 +610,9 @@ Gift Section
 Luxury Section
 ######################################
 */
-/* .Luxury-sec .luxury-img {
-    max-width: 960px;
-    max-height: 750px;
-} */
+.Luxury-sec .luxury-img {
+   height: 100%;
+}
 
 .Luxury-sec .luxury-img img {
     width: 100%;
