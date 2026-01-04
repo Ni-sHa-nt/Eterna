@@ -1,4 +1,4 @@
-// Toogle Menu
+// ################# Toogle Menu #################
 const menuBtn = document.querySelector('.nav-menu');
 const navbar = document.querySelector('.navbar-collapsed');
 
@@ -14,7 +14,8 @@ menu.addEventListener('click', function () {
 });
 
 
-// Usp-bar Section
+
+// ################# Usp-bar Section #################
 const swiper = new Swiper(".companySwiper", {
     slidesPerView: "auto",
     spaceBetween: 60,
@@ -32,7 +33,8 @@ const swiper = new Swiper(".companySwiper", {
 });
 
 
-// Product Category section 
+
+// ################# Product Category section ################# 
 const categorySwiper = new Swiper(".categorySwiper", {
     slidesPerView: "6",
     spaceBetween: 30,
@@ -76,7 +78,8 @@ const categorySwiper = new Swiper(".categorySwiper", {
 });
 
 
-// Top Style Section
+
+// ################# Top Style Section #################
 const topStyleSwiper = new Swiper(".topStyleSwiper", {
     slidesPerView: 4,
     spaceBetween: 24,
@@ -116,7 +119,7 @@ const topStyleSwiper = new Swiper(".topStyleSwiper", {
 
 
 
-// Set your sale end date (YYYY, MM-1, DD, HH, MM)
+// ################# Sale Section #################
 const endDate = new Date(2026, 0, 10, 23, 59).getTime();
 
 function updateCounter() {
@@ -144,7 +147,7 @@ setInterval(updateCounter, 60000); // update every minute
 
 
 
-// For Every You Section
+// ################# For Every You Section #################
 const forEverySwiper = new Swiper(".forEverySwiper", {
     slidesPerView: 3,
     spaceBetween: 10,
@@ -171,6 +174,43 @@ const forEverySwiper = new Swiper(".forEverySwiper", {
         992: { slidesPerView: 3 }
     },
 });
+
+
+
+// ################# Brand Logo Section #################
+const brandSlider = new Swiper('.brand-slider', {
+    loop: true,
+    slidesPerView: 8,
+    spaceBetween: 15,
+
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+
+    speed: 3000,
+    grabCursor: true,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 6,
+        },
+        1200: {
+            slidesPerView: 8,
+        }
+    }
+});
+
+
 
 
 
