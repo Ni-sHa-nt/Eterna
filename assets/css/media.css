@@ -303,6 +303,17 @@
         color: var(--light-color);
         font-size: 50px;
     }
+
+    /* Disable hover effect */
+    .sale-img:hover::after {
+        animation: none;
+    }
+
+
+    /* Enable auto shine */
+    .sale-img::after {
+        animation: shine 1.2s linear infinite;
+    }
 }
 
 @media screen and (max-width: 576px) {

@@ -828,7 +828,6 @@ Sale Section
 
 /* .sale-img::after {
     animation: shine 1.2s linear infinite;
-    animation-delay: 20s;
 } */
 
 @keyframes shine {
