@@ -168,6 +168,7 @@
         border: none;
         outline: none;
         width: 90%;
+        color: var(--light-color);
     }
 
     .sm-search-bar i {
