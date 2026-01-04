@@ -144,6 +144,33 @@ setInterval(updateCounter, 60000); // update every minute
 
 
 
+const forEverySwiper = new Swiper(".forEverySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    speed: 600,
+    grabCursor: true,
+
+
+    // autoplay: {
+    //     // delay: 1,
+    //     // disableOnInteraction: false,
+    // },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 1.2 },
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 }
+    },
+});
+
 
 
 

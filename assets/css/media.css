@@ -188,6 +188,12 @@
     .luxury-content {
         padding: 100px 0 80px 50px;
     }
+
+    /* For Every You Section */
+    .for-every-card .for-every-img {
+        /* height: 100%; */
+        height: 450px;
+    }
 }
 
 
@@ -252,6 +258,15 @@
         font-size: 40px;
     }
 
+    /* For Every You Section */
+    .for-every-you .custom-prev {
+        left: 20%;
+    }
+
+    .for-every-you .custom-next {
+        right: 20%;
+    }
+
 }
 
 
@@ -313,6 +328,15 @@
     /* Enable auto shine */
     .sale-img::after {
         animation: shine 1.2s linear infinite;
+    }
+
+    /* For Every You Section */
+    .for-every-you .custom-prev {
+        left: 0%;
+    }
+
+    .for-every-you .custom-next {
+        right: 0%;
     }
 }
 
@@ -381,6 +405,11 @@
         padding: 50px 0 80px 50px;
     }
 
+    /* For Every You Section */
+    .for-every-you .heading .title_2 {
+        font-size: 35px;
+    }
+
 }
 
 
@@ -396,6 +425,11 @@
     }
 
     .top-style-sec .title_2 {
+        text-align: center;
+    }
+
+    /* Gift Section */
+    .gift-sec .heading .title_2 {
         text-align: center;
     }
 
@@ -438,6 +472,15 @@
     .minutes p:first-child {
         font-size: 35px;
     }
+
+    /* For Every You Section */
+    .for-every-you .heading .title_2 {
+        text-align: center;
+    }
+
+    .for-every-content .title_3 {
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -462,7 +505,6 @@
 
     /* Gift Section */
     .gift-sec .heading .title_2 {
-        text-align: center;
         font-size: 25px;
     }
 
@@ -500,5 +542,28 @@
     .sale-row {
         --bs-gutter-x: 0.5rem;
         --bs-gutter-y: 0.5rem;
+    }
+
+    /* For Every You Section */
+    .for-every-you .heading .title_2 {
+        font-size: 28px;
+    }
+
+    .for-every-you .center-btn {
+        z-index: 10;
+        width: 48px;
+        height: 50px;
+    }
+
+    .for-every-you .center-btn img {
+        width: 10px;
+    }
+
+    .for-every-card .for-every-img {
+        height: 340px;
+    }
+
+    .for-every-content .title_3 {
+        font-size: 30px;
     }
 }
