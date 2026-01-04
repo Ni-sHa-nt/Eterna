@@ -729,6 +729,8 @@ Sale Section
 
 
 /* @keyframes alert {
+
+
     0% {
         color: #ff0000;
         opacity: 1;
@@ -794,6 +796,8 @@ Sale Section
 .sale-img {
     max-width: 100%;
     height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .sale-img img {
@@ -802,6 +806,36 @@ Sale Section
     object-fit: cover;
 }
 
+
+
+.sale-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -108%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.45) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-50deg);
+}
+
+.sale-img:hover::after {
+    animation: shine 1.6s infinite;
+}
+
+/* .sale-img::after {
+    animation: shine 1.2s linear infinite;
+    animation-delay: 20s;
+} */
+
+@keyframes shine {
+    100% {
+        left: 160%;
+    }
+}
 
 
 /* 
