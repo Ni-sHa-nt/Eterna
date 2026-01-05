@@ -989,6 +989,9 @@ Brand Logo Section
 Collection Section
 ######################################
 */
+.collection-sec {
+    padding: 80px 0;
+}
 
 .collection-img {
     max-width: 868px;
@@ -1033,6 +1036,8 @@ Collection Section
 }
 
 
+
+
 /* 
 ######################################
  Review Section
@@ -1048,6 +1053,7 @@ Collection Section
 
 .review-img {
     max-width: 200px;
+    height: 200px;
     margin: 0 auto;
 }
 
@@ -1083,6 +1089,43 @@ Collection Section
     font-weight: 400;
     color: var(--gray-color);
     font-family: var(--heading);
+}
+
+/* .review-card {
+    height: 100%;
+} */
+
+/* .swiper-slide {
+    height: auto;
+} */
+
+
+.reviewSwiper .custom-prev,
+.reviewSwiper .custom-next {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.reviewSwiper .custom-prev {
+    left: 0;
+}
+
+.reviewSwiper .custom-next {
+    right: 0;
 }
 
 
