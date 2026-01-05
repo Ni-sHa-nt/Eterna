@@ -22,7 +22,6 @@ html {
     overflow-x: hidden;
 }
 
-
 body.menu-open {
     overflow: hidden;
     height: 100vh;
@@ -240,7 +239,7 @@ Hero Section
 */
 .hero-sec {
     min-height: 100vh;
-    padding: 180px 0 222px;
+    padding: 482px 0 222px;
     background: url(../img/banner-bg-01.png);
     background-size: cover;
     background-position: center;
