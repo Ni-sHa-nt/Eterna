@@ -203,6 +203,19 @@
     .review-text p {
         font-size: 16px;
     }
+
+    /* Customizable Section */
+    .customizable-content .title_2 {
+        font-size: 40px;
+    }
+
+    .customizable-content p {
+        font-size: 16px;
+    }
+
+    .primary-btn {
+        font-size: 16px;
+    }
 }
 
 
@@ -274,6 +287,23 @@
 
     .for-every-you .custom-next {
         right: 20%;
+    }
+
+    /* Customizable Section */
+    .customizable-wrapper {
+        padding: 80px 0;
+    }
+
+    .customizable-content {
+        padding-left: 30px;
+    }
+
+    .customizable-content {
+        max-width: 90%;
+    }
+
+    .customizable-img {
+        max-height: 450px;
     }
 
 }
@@ -417,6 +447,23 @@
     /* For Every You Section */
     .for-every-you .heading .title_2 {
         font-size: 35px;
+    }
+
+    /* Customizable Section */
+    .customizable-wrapper {
+        padding: 40px 0;
+    }
+
+    .customizable-content .title_2 {
+        font-size: 30px;
+    }
+
+    .customizable-content p {
+        font-size: 12px;
+    }
+
+    .customizable-content .primary-btn {
+        font-size: 14px;
     }
 
 }
@@ -594,5 +641,20 @@
 
     .for-every-content .title_3 {
         font-size: 30px;
+    }
+
+    /* Customizable Section */
+    .customizable-content .title_2 {
+        font-size: 28px;
+    }
+
+    .customizable-content .title_2 {
+        color: var(--light-color);
+        margin: 4px 0 16px;
+    }
+
+    .customizable-content .primary-btn {
+        font-size: 12px;
+        padding: 15px 30px;
     }
 }
