@@ -28,6 +28,7 @@ body.menu-open {
     height: 100vh;
 }
 
+
 .my-container {
     max-width: 1784px !important;
 }
@@ -208,11 +209,26 @@ nav {
     display: none;
 }
 
-.header-sec {
+/* .header-sec {
     background: var(--light-color);
     position: sticky;
     top: 0;
     z-index: 9999;
+} */
+
+.header-sec {
+    position: fixed;
+    background: var(--light-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.4s ease;
+}
+
+/* when header is hidden */
+.header-sec.hide {
+    transform: translateY(-100%);
 }
 
 

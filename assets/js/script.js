@@ -17,6 +17,24 @@ menu.addEventListener('click', function () {
 });
 
 
+// Hide header section when scroll
+let lastScrollTop = 0;
+const header = document.querySelector('.header-sec');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // scrolling down → hide header
+        header.classList.add('hide');
+    } else {
+        // scrolling up → show header
+        header.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
 
 // ################# Usp-bar Section #################
 const swiper = new Swiper(".companySwiper", {
@@ -242,6 +260,7 @@ const reviewSwiper = new Swiper(".reviewSwiper", {
         },
     },
 });
+
 
 
 
