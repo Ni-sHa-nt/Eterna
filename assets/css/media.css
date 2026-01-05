@@ -549,6 +549,11 @@
         height: 44px;
     }
 
+    .reviewSwiper .custom-prev img,
+    .reviewSwiper .custom-next img {
+        width: 20px;
+    }
+
     .review-text p {
         font-size: 14px;
         margin: 15px auto;

@@ -4,6 +4,9 @@ const navbar = document.querySelector('.navbar-collapsed');
 
 menuBtn.addEventListener('click', () => {
     navbar.classList.toggle('active');
+
+    // for no scroll when hamburger menu open
+    document.body.classList.toggle('menu-open');
 });
 
 
