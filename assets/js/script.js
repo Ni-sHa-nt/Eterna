@@ -265,6 +265,39 @@ const reviewSwiper = new Swiper(".reviewSwiper", {
 
 
 
+// ################# Stories Section #################
+const storiesSwiper = new Swiper(".storiesSwiper", {
+    slidesPerView: 6.5,
+    spaceBetween: 20,
+    loop: true,
+    grabCursor: true,
+
+
+    // autoplay: {
+    //     // delay: 0,            
+    //     // disableOnInteraction: false,
+    // },
+
+    freeMode: false,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 4.5,
+            spaceBetween: 5,
+        },
+        576: {
+            slidesPerView: 5.5,
+        },
+        992: {
+            slidesPerView: 6.5,
+        }
+    }
+});
+
+
+
+
+
 
 
 
