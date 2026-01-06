@@ -12,6 +12,7 @@
     --btn-bg: #F3EFE8;
     --dark-color: #000000;
     --gray-color: #494949;
+    --neutral-gray: #434343;
     --light-gray-color: #242424;
     --heading: "Cormorant", sans-serif;
     --body: "Montserrat", sans-serif;
@@ -1331,4 +1332,48 @@ Stories Section
 
 .storiesSwiper .swiper-wrapper {
     transition-timing-function: linear !important;
+}
+
+
+/* 
+######################################
+Why Choose Us Section
+######################################
+*/
+.why-choose-us-sec {
+    padding: 80px 0;
+}
+
+.why-choose-card {
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.why-choose-card .title_3 {
+    margin: 10px 0;
+    font-size: 35px;
+    font-weight: 300;
+    color: var(--neutral-gray);
+    text-transform: uppercase;
+    font-family: var(--heading);
+    white-space: nowrap;
+}
+
+.why-choose-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--neutral-gray);
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--body);
 }
