@@ -273,10 +273,10 @@ const storiesSwiper = new Swiper(".storiesSwiper", {
     grabCursor: true,
 
 
-    // autoplay: {
-    //     // delay: 0,            
-    //     // disableOnInteraction: false,
-    // },
+    autoplay: {
+        // delay: 0,            
+        // disableOnInteraction: false,
+    },
 
     freeMode: false,
 
