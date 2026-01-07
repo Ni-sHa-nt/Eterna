@@ -39,6 +39,11 @@
         font-family: var(--heading);
         color: var(--light-color);
     }
+
+    /* Footer Section */
+    .bottom-head {
+        font-size: 24px;
+    }
 }
 
 
@@ -387,6 +392,19 @@
     .for-every-you .custom-next {
         right: 0%;
     }
+
+    /* Footer Section */
+    .footer-sec {
+        padding: 40px 0;
+    }
+
+    .footer-bootom .address {
+        margin: 0 auto;
+    }
+
+    .footer-bootom .social-media-links {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -476,6 +494,31 @@
         font-size: 14px;
     }
 
+    /* Footer Section */
+    .footer-top form {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bottom-head,
+    .footer-bootom ul li,
+    .address {
+        text-align: center;
+    }
+
+    .footer-head {
+        font-size: 40px;
+    }
+
+    .footer-top p {
+        font-size: 15px;
+        margin: 15px 0 20px;
+    }
 }
 
 
@@ -581,6 +624,19 @@
 
     .insta-logo i {
         font-size: 12px;
+    }
+
+    /* Footer Section */
+    .footer-top input::placeholder {
+        font-size: 12px;
+    }
+
+    .subscribe-btn {
+        font-size: 12px;
+    }
+
+    .footer-top {
+        margin-bottom: 38px;
     }
 }
 
@@ -690,5 +746,15 @@
 
     .why-choose-card p {
         font-size: 12px;
+    }
+
+    /* Footer Section */
+    .footer-head {
+        font-size: 28px;
+    }
+
+    .footer-top p {
+        font-size: 12px;
+        margin: 15px 0 20px;
     }
 }
