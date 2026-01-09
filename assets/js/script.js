@@ -296,6 +296,14 @@ const storiesSwiper = new Swiper(".storiesSwiper", {
 
 
 
+// ################# Loader Section #################
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.querySelector(".luxury-loader").style.display = "none";
+    }, 2000);
+});
+
+
 
 
 
