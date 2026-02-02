@@ -1,0 +1,238 @@
+/* 
+######################################
+Breadcrumb Section
+######################################
+*/
+.breadcrumb-wrapper {
+    padding: 315px 0 20px 0;
+    background: var(--secondary-color);
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-color);
+    font-family: var(--body);
+}
+
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light-color);
+}
+
+
+/* 
+######################################
+Contact Banner Section
+######################################
+*/
+.about-banner-sec {
+    padding: 92px 0;
+    background: url("../img/About-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    font-family: var(--body);
+    position: relative;
+    display: inline-block;
+}
+
+.sub-title::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 1px;
+    height: 100%;
+    background: var(--light-color);
+}
+
+.about-banner-sec .title_1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--primary-color);
+    font-family: var(--heading);
+    margin: 24px 0;
+}
+
+.about-banner-sec p {
+    max-width: 528px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(28/18);
+    text-transform: capitalize;
+    color: var(--light-color);
+    font-family: var(--body);
+    margin-bottom: 24px;
+}
+
+
+/* 
+######################################
+Speak With Us Section
+######################################
+*/
+.speak-with-us-sec {
+    padding: 80px 0;
+}
+
+.speak-with-us-left .title_2 {
+    font-size: 48px;
+}
+
+
+.speak-with-us-left p {
+    max-width: 838px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(28/18);
+    color: var(--gray-color);
+    text-transform: capitalize;
+    font-family: var(--body);
+    margin: 10px 0 60px;
+}
+
+.get-in-touch-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.get-in-touch-icon svg {
+    width: 24px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.get-in-touch-cntnt h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: calc(28/24);
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-family: var(--body);
+    margin-bottom: 10px;
+}
+
+.get-in-touch-cntnt p {
+    max-width: 339px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(28/18);
+    text-transform: capitalize;
+    color: var(--gray-color);
+    font-family: var(--body);
+}
+
+.get-in-touch {
+    display: flex;
+}
+
+.get-in-touch-cntnt {
+    margin-left: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--primary-color);
+    background: rgba(207, 207, 207, 40%);
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(28/18);
+    font-family: var(--body);
+    margin-bottom: 24px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--gray-color);
+}
+
+.contact-form textarea {
+    height: 245px;
+    margin-bottom: 15px;
+}
+
+.contact-form p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(28/12);
+    color: var(--light-gray-color);
+    text-transform: capitalize;
+    font-family: var(--body);
+    margin-bottom: 15px;
+}
+
+.contact-form p a {
+    color: var(--light-gray-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+
+/* 
+######################################
+Why Choose Us Section
+######################################
+*/
+.why-choose-us-sec {
+    padding: 80px 0;
+    /* padding-bottom: 80px; */
+}
+
+.why-choose-card {
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.why-choose-card .title_3 {
+    margin: 10px 0;
+    font-size: 35px;
+    font-weight: 300;
+    color: var(--neutral-gray);
+    text-transform: uppercase;
+    font-family: var(--heading);
+    white-space: nowrap;
+}
+
+.why-choose-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--neutral-gray);
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--body);
+}

@@ -1,0 +1,1171 @@
+/* 
+######################################
+Hero Section 
+######################################
+*/
+.hero-sec {
+    min-height: 100vh;
+    padding: 482px 0 222px;
+    background: url(../img/banner-bg-01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title_1 {
+    max-width: 868px;
+    font-size: 105px;
+    font-weight: 600;
+    color: var(--light-color);
+    text-transform: capitalize;
+    font-family: var(--heading);
+}
+
+.hero-content p {
+    max-width: 868px;
+    margin: 30px 0 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
+
+.hero-sec .primary-btn {
+    margin-right: 24px;
+}
+
+.primary-btn:hover {
+    color: var(--light-color);
+    background: var(--primary-color);
+}
+
+
+
+/* 
+######################################
+Usp-bar Section 
+######################################
+*/
+.usp-sec {
+    padding: 20px 0;
+    background: var(--secondary-color);
+}
+
+.usp-sec .companySwiper {
+    width: 100%;
+    /* padding: 20px 0; */
+    /* background: #C3A38E; */
+}
+
+.usp-sec .companySwiper .swiper-slide {
+    width: auto;
+    text-align: center;
+    position: relative;
+}
+
+.usp-sec .companySwiper h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 80px;
+    white-space: nowrap;
+    color: var(--light-color);
+    text-transform: capitalize;
+    font-family: var(--body);
+}
+
+/* .companySwiper img {
+    height: 60px;
+    width: auto;
+} */
+
+.usp-sec .companySwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.usp-sec .swiper-slide h3::after {
+    content: "";
+    background: url("../img/icon-stars.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* 
+######################################
+Product Category section 
+######################################
+*/
+.product-sec {
+    padding: 80px 0;
+}
+
+.heading {
+    margin-bottom: 30px;
+}
+
+.product-sec .title_2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-family: var(--heading);
+}
+
+.product-sec .catergory-img {
+    max-width: 273px;
+    margin-bottom: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.catergory-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.category-card:hover .catergory-img img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.category-card .title_3 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--gray-color);
+    font-family: var(--body);
+    text-align: center;
+    padding-bottom: 4px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.category-card .title_3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: var(--dark-color);
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+
+.category-card:hover .title_3::after {
+    width: 100%;
+}
+
+.product-sec .categorySwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-sec .categorySwiper .swiper-slide {
+    width: auto;
+}
+
+.product-sec .categorySwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+
+
+/* 
+######################################
+Top Style Section
+######################################
+*/
+.top-style-sec {
+    padding: 80px 0;
+}
+
+
+.top-style-img {
+    max-width: 422px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-style-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.top-style-card:hover .top-style-img img {
+    transform: scale(1.4);
+}
+
+.top-style-content {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.top-style-content .title_3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-family: var(--body);
+}
+
+.top-style-content .price-tag {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-family: var(--body);
+}
+
+.top-style-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.badge {
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 0;
+    text-transform: capitalize;
+    font-family: var(--body);
+    position: absolute;
+    top: -35px;
+    left: 10px;
+    padding: 8px 10px;
+    color: var(--light-color);
+    background: var(--primary-color);
+    transition: 0.4s ease;
+}
+
+.top-style-card:hover .badge {
+    top: 10px;
+}
+
+.top-style-card-overlay {
+    background: linear-gradient(4deg, rgba(56, 52, 52, 1) 0%, rgba(0, 0, 0, 0.12) 50%);
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.4s linear;
+}
+
+.top-style-card:hover .top-style-card-overlay {
+    opacity: 1;
+}
+
+.top-style-card-overlay .wishlist,
+.top-style-card-overlay .cart {
+    background: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-style-card-overlay i {
+    color: var(--gray-color);
+}
+
+
+.top-style-sec .custom-prev::after,
+.top-style-sec .custom-next::after {
+    content: none;
+    /* removes default Swiper arrow */
+}
+
+.top-style-sec .custom-prev,
+.top-style-sec .custom-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    cursor: pointer;
+    z-index: 10;
+}
+
+.top-style-sec .custom-prev {
+    left: -25px;
+}
+
+.top-style-sec .custom-next {
+    right: -25px;
+}
+
+
+/* 
+######################################
+Gift Section
+######################################
+*/
+.gift-sec {
+    padding: 80px 0;
+}
+
+.gift-img {
+    max-width: 868px;
+    position: relative;
+}
+
+.gift-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gift-sec-overlay {
+    position: absolute;
+    background: #2E394B;
+    background: linear-gradient(20deg, rgba(46, 57, 75, 0.33) 0%, rgba(0, 0, 0, 0.12) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.35s linear;
+}
+
+.gift-content {
+    text-align: center;
+    scale: 0;
+    transition: 0.35s linear;
+}
+
+.gift-content .title_2 {
+    font-size: 45px;
+    color: var(--light-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.gift-content .primary-btn {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--light-color);
+    background: var(--primary-color);
+}
+
+.gift-img:hover .gift-sec-overlay {
+    opacity: 1;
+}
+
+.gift-img:hover .gift-content {
+    scale: 1;
+}
+
+
+
+/* 
+######################################
+Luxury Section
+######################################
+*/
+.Luxury-sec .luxury-img {
+    height: 100%;
+}
+
+.Luxury-sec .luxury-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Luxury-sec .luxury-wrapper {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+
+.luxury-content {
+    padding-left: 50px;
+}
+
+.luxury-content img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.luxury-content .title_2 {
+    max-width: 681px;
+    font-size: 84px;
+    font-weight: 300;
+    margin: 4px 0 30px;
+    font-family: var(--heading);
+    color: var(--light-color);
+}
+
+.luxury-content p {
+    max-width: 701px;
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--light-color);
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
+
+.luxury-content .primary-btn:hover {
+    background: transparent;
+    color: var(--light-color);
+    border: 2px solid var(--light-color);
+}
+
+.luxury-main .luxury-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.luxury-main .luxury-box:nth-child(even) .luxury-wrapper {
+    background: #B38C11;
+    background: linear-gradient(243deg, rgba(179, 140, 17, 0.1) 0%, rgba(179, 140, 17, 1) 90%);
+}
+
+
+
+
+/* 
+######################################
+Sale Section
+######################################
+*/
+.sale-sec {
+    padding: 80px 0;
+    background-color: rgba(237, 219, 197, 0.858);
+    /* background: rebeccapurple; */
+}
+
+.sale-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 40px 50px 70px;
+    background: var(--primary-color);
+}
+
+.sale-content .title_3 {
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--light-color);
+    font-family: var(--heading);
+    /* animation: alert 1s infinite; */
+    /* animation: pulse 1s infinite; */
+}
+
+.pulse {
+    animation: pulse 1s infinite;
+    /* display: inline-block; */
+    /* transform-origin: center center; */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.03);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* @keyframes alert {
+
+
+    0% {
+        color: #ff0000;
+        opacity: 1;
+    }
+
+    50% {
+        color: #ff0000;
+        opacity: 0.4;
+    }
+
+    100% {
+        color: #ff0000;
+        opacity: 1;
+    }
+} */
+
+
+.sale-content p {
+    max-width: 471px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
+
+.sale-content .primary-btn:hover {
+    border: 2px solid var(--light-color);
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.day p:first-child,
+.hours p:first-child,
+.minutes p:first-child {
+    color: var(--light-color);
+    font-size: 60px;
+    font-weight: 300;
+    font-family: var(--heading);
+    margin: 0;
+}
+
+
+.day p:nth-child(2),
+.hours p:nth-child(2),
+.minutes p:nth-child(2) {
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--inter);
+    margin: 0;
+}
+
+.sale-img {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sale-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.sale-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -108%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.45) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-50deg);
+}
+
+.sale-img:hover::after {
+    animation: shine 1.6s infinite;
+}
+
+/* .sale-img::after {
+    animation: shine 1.2s linear infinite;
+} */
+
+@keyframes shine {
+    100% {
+        left: 160%;
+    }
+}
+
+
+
+
+/* 
+######################################
+For Every You Section
+######################################
+*/
+.for-every-you {
+    padding: 80px 0;
+}
+
+
+.for-every-img {
+    /* height: 100%; */
+    height: 550px;
+}
+
+.for-every-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.for-every-card {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.for-every-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 40px;
+    background: #0000004a;
+    z-index: 3;
+}
+
+.for-every-content .title_3 {
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--light-color);
+    text-transform: capitalize;
+    font-family: var(--heading);
+}
+
+.for-every-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.815) 86%);
+    transition: 0.35s ease-in;
+    z-index: 2;
+}
+
+.for-every-card:hover .for-every-overlay {
+    height: 100%;
+}
+
+
+/* .for-every-card:hover{
+    transform: translateY(-20px);
+    transition: 0.55s ease-in;
+} */
+
+.for-every-card:hover .for-every-img img {
+    transform: scale(1.2);
+    transition: 0.35s ease-in;
+}
+
+.for-every-you .forEverySwiper .swiper-slide {
+    transition: transform 0.4s ease, height 0.4s ease;
+    transform: scale(0.9);
+}
+
+.for-every-you .forEverySwiper .swiper-slide-active {
+    transform: scale(1.1);
+}
+
+.forEverySwiper {
+    position: relative;
+}
+
+.center-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-33%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.for-every-you .custom-prev::after,
+.for-every-you .custom-next::after {
+    content: none;
+    /* removes default Swiper arrow */
+}
+
+.for-every-you .custom-prev {
+    left: 30%;
+}
+
+.for-every-you .custom-next {
+    right: 30%;
+}
+
+
+
+/* 
+######################################
+Brand Logo Section
+######################################
+*/
+.brand-logo-sec {
+    padding: 40px 0;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+
+
+
+/* 
+######################################
+Collection Section
+######################################
+*/
+.collection-sec {
+    padding: 80px 0;
+}
+
+.collectionSwiper {
+    overflow: hidden;
+    height: 675px;
+}
+
+.collectionSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+
+.collectionSwiper .swiper-slide {
+    width: 422px;
+    height: 515px;
+    flex-shrink: 0;
+    /* transition: all 0.7s ease; */
+    transition: width 0.7s ease, height 0.7s ease;
+}
+
+.collectionSwiper .swiper-slide-active {
+    width: 868px;
+    height: 675px;
+    /* margin-left: 0 !important; */
+}
+
+.collection-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.collection-img,
+.sm-collection-img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-img img,
+.sm-collection-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.collection-wrapper {
+    position: relative;
+}
+
+.collection-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004a;
+    display: flex;
+    align-items: end;
+    padding: 0 0 30px 30px;
+}
+
+.collection-content .title_2 {
+    color: var(--light-color);
+    margin-bottom: 10px;
+}
+
+
+
+/* 
+######################################
+ Review Section
+######################################
+*/
+.review-sec {
+    padding: 80px 0;
+}
+
+.review-card {
+    text-align: center;
+}
+
+.review-img {
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.start {
+    margin: 24px 0;
+    color: var(--primary-color);
+}
+
+.review-text .title_2 {
+    font-size: 48px;
+}
+
+.review-text p {
+    max-width: 452px;
+    margin: 24px auto;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--light-gray-color);
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
+
+.review-text .title_3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--gray-color);
+    font-family: var(--heading);
+}
+
+/* .review-card {
+    height: 100%;
+} */
+
+/* .swiper-slide {
+    height: auto;
+} */
+
+
+.reviewSwiper .custom-prev,
+.reviewSwiper .custom-next {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.reviewSwiper .custom-prev {
+    left: 0;
+}
+
+.reviewSwiper .custom-next {
+    right: 0;
+}
+
+
+
+
+/* 
+######################################
+Customizable Section
+######################################
+*/
+.customizable-wrapper {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.customizable-content {
+    max-width: 501px;
+    padding-left: 80px;
+}
+
+.customizable-content .title_2 {
+    color: var(--light-color);
+    margin: 4px 0 30px;
+}
+
+.customizable-content p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-color);
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
+
+.customizable-content .primary-btn:hover {
+    border: 2px solid var(--light-color) !important;
+}
+
+.customizable-img {
+    max-height: 750px;
+    overflow: hidden;
+}
+
+.customizable-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* 
+######################################
+Shop The Look Section
+######################################
+*/
+.shop-look-sec {
+    padding: 80px 0;
+}
+
+.shop-look-main {
+    max-width: 868px;
+    height: 675px;
+}
+
+.shop-look-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.shop-cart-img {
+    max-width: 422px;
+    height: 435px;
+}
+
+.shop-cart-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.shop-card-content {
+    margin-top: 14px;
+}
+
+.shop-card-content p {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    font-family: var(--body);
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.shop-card-stars {
+    display: flex;
+    color: var(--primary-color);
+    align-items: center;
+}
+
+.shop-card-stars p {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+
+
+
+/* 
+######################################
+Stories Section
+######################################
+*/
+.stories-sec {
+    padding: 80px 0;
+}
+
+.stories-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.stories-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s linear;
+}
+
+.stories-overlay {
+    position: absolute;
+    background: #ffffff;
+    background: linear-gradient(179deg, rgba(255, 255, 255, 0) 58%, rgba(38, 37, 37, 1) 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+.insta-logo {
+    width: 45px;
+    height: 45px;
+    background: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: 0.2s linear;
+}
+
+.insta-logo i {
+    font-size: 25px;
+}
+
+.stories-img:hover .stories-overlay {
+    opacity: 1;
+}
+
+.stories-img:hover .insta-logo {
+    transform: scale(1);
+}
+
+.stories-img:hover img {
+    transform: scale(1.1);
+}
+
+.storiesSwiper .swiper-slide {
+    max-width: 338px;
+    display: flex;
+    justify-content: center;
+}
+
+.storiesSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+
+
+/* 
+######################################
+Why Choose Us Section
+######################################
+*/
+.why-choose-us-sec {
+    /* padding: 80px 0; */
+    padding-bottom: 80px;
+}
+
+.why-choose-card {
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.why-choose-card .title_3 {
+    margin: 10px 0;
+    font-size: 35px;
+    font-weight: 300;
+    color: var(--neutral-gray);
+    text-transform: uppercase;
+    font-family: var(--heading);
+    white-space: nowrap;
+}
+
+.why-choose-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--neutral-gray);
+    text-transform: capitalize;
+    line-height: calc(28/18);
+    font-family: var(--body);
+}
