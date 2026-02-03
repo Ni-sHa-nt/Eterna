@@ -99,7 +99,7 @@
         /* background: rgba(0, 0, 0, 0.5); */
         /* backdrop-filter: blur(80px); */
         /* background: linear-gradient(to right, rgba(0, 0, 0, 0.816), rgba(0, 0, 0, 0.1)), url(../img/navbar-collapsed-bg-01.jpg); */
-        background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1600427150683-348f588e815c?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1600427150683-348f588e815c?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -398,6 +398,11 @@
         z-index: 99999;
     }
 
+    /* Contact Page */
+    /* Mobile app cta Section */
+    .mobile-app-cta-sec {
+        padding: 60px 0px;
+    }
 
 }
 
@@ -521,6 +526,16 @@
     .wishlist-prdct-overlay .secondary-btn {
         padding: 12px 24px;
         font-size: 12px;
+    }
+
+    /* Contact Page */
+    /* Mobile app cta Section */
+    .mobile-app-cta-wrapper .title_2 {
+        font-size: 35px;
+    }
+
+    .mobile-app-cta-wrapper p {
+        font-size: 16px;
     }
 }
 
@@ -1011,6 +1026,48 @@
     .customer-reviews-ratings-sec .title_2 {
         margin-bottom: 15px;
     }
+
+    /* Contact Page */
+    /* Speak With Us Section */
+    .speak-with-us-sec {
+        padding: 65px 0;
+    }
+
+    .speak-with-us-left .title_2 {
+        font-size: 33px;
+    }
+
+    .speak-with-us-left p {
+        font-size: 14px;
+        margin: 10px 0 40px;
+    }
+
+    .get-in-touch-cntnt h3 {
+        font-size: 20px;
+    }
+
+    .get-in-touch-cntnt p {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    /* Contact Page */
+    /* Mobile app cta Section */
+    .mobile-app-cta-wrapper .title_2 {
+        font-size: 28px;
+    }
+
+    .mobile-app-cta-wrapper p {
+        font-size: 12px;
+    }
+
+    .app-links a {
+        max-width: 150px;
+    }
+
+    .contact-page {
+        padding: 40px 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1251,6 +1308,12 @@
         font-size: 12px;
     }
 
+    /* Contact Page */
+    /* Speak With Us Section */
+    .speak-with-us-left p {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -1478,5 +1541,15 @@
     /*  Customer Reviews & Ratings Section */
     .customer-reviews-ratings-sec .title_2 {
         font-size: 25px;
+    }
+
+    /* Contact Page */
+    /* Mobile app cta Section */
+    .mobile-app-cta-wrapper .title_2 {
+        font-size: 22px;
+    }
+
+    .app-links a {
+        max-width: 115px;
     }
 }
