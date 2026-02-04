@@ -177,7 +177,6 @@ window.addEventListener("load", () => {
 
 
 // ################# Custom Cursor #################
-const dot = document.querySelector('.cursor-dot');
 const ring = document.querySelector('.cursor-ring');
 
 let mouseX = 0, mouseY = 0;

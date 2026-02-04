@@ -748,9 +748,6 @@
         font-size: 14px;
     }
 
-    .details-and-policies-wrapper h3 {
-        font-size: 16px;
-    }
 
     /* Product-details Page */
     /* Related Products Section */
@@ -1308,6 +1305,10 @@
         font-size: 12px;
     }
 
+    .accordion-button {
+        font-size: 18px;
+    }
+
     /* Contact Page */
     /* Speak With Us Section */
     .speak-with-us-left p {
@@ -1511,9 +1512,6 @@
         padding: 13px 25px;
     }
 
-    .details-and-policies .col-6 {
-        width: 100%;
-    }
 
     .delivery-time a {
         margin-left: 2px;
